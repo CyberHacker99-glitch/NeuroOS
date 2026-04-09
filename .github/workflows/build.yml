@@ -15,9 +15,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        sudo apt update
-        sudo apt install -y build-essential flex bison libncurses-dev bc
-
+        sudo apt install -y build-essential flex bison libncurses-dev bc libelf-dev
     - name: Download Kernel Source
       run: |
         wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
